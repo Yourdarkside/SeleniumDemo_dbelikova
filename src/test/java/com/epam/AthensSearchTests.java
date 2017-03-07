@@ -59,7 +59,7 @@ public class AthensSearchTests {
 
   @AfterMethod
   public void afterMethod() {
-	  
+			driver.quit();   
   }
 
 }
