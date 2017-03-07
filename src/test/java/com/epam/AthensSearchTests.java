@@ -50,6 +50,7 @@ public class AthensSearchTests {
   @BeforeMethod
   public void beforeMethod() {
 	  System.setProperty("webdriver.gecko.driver", PATH_TO_FIREFOX_DRIVER);
+	  driver.get("http://google.com/");
       driver = new FirefoxDriver();
       driver.manage().window().maximize();
   }
