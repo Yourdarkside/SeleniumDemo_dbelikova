@@ -53,7 +53,7 @@ public class AthensSearchTests {
 	  System.setProperty("webdriver.gecko.driver", PATH_TO_FIREFOX_DRIVER);
 	  DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 	  capabilities.setCapability("marionette", true);
-      driver = new FirefoxDriver();
+      driver = new FirefoxDriver(capabilities);
       driver.manage().window().maximize();
   }
 
