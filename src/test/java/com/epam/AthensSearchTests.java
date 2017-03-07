@@ -7,7 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -51,10 +50,6 @@ public class AthensSearchTests {
   @BeforeMethod
   public void beforeMethod() {
 	  System.setProperty("webdriver.gecko.driver", PATH_TO_FIREFOX_DRIVER);
-	//Now you can Initialize marionette driver to launch firefox
-	  DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-	  capabilities.setCapability("marionette", true);
-	  WebDriver driver = new FirefoxDriver(capabilities);
       driver = new FirefoxDriver();
       driver.manage().window().maximize();
   }
